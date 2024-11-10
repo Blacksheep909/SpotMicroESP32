@@ -45,6 +45,7 @@ This directory contains the Arduino code for controlling the SpotMicroESP32 robo
   - [IBusBM](https://github.com/bolderflight/IBusBM): For handling the FS-i6 (iBus) receiver communication.
   - [Ramp](https://github.com/Erriez/ErriezRamp): Controls ramping (acceleration/deceleration) of servo movements.
 
+- All of these libraries can be accessed within the Arduino IDE in the Libraries tab
 ### Setup and Configuration
 
 1. **Configure Arduino Code**:
