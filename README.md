@@ -1,19 +1,29 @@
-# SpotMicroESP32
+# SpotMicroESP32 - Nitro Fork
 
-My take on a SpotMicro with an optimized design for supportfree 3D-printing and integration of an ESP32-DevKitC. This is still a Work-in-Progress!
+This fork of the SpotMicroESP32 project builds on the excellent foundation by michaelkubina. It introduces several enhancements, including new features for Arduino code integration, a custom PCB design, and support for the FS-i6 hobby controller, making it easier to control and expand the functionality of the SpotMicro robot dog. This version also uses the ESP32-DevKitC. Work-in-Progress!
 
 You can find the 3D-printing parts on Thingiverse as well: https://www.thingiverse.com/thing:4559827/files
+(There are a few modification files in this repo for updated metal servo horns, which I fully recommend using)
 
 - Join the Discord-Channel for this remix: https://discord.gg/s8F6xHGk9Y (#spotmicro-esp32)
-- ~Join the Slack-Channel for this remix - discuss any topics regarding this design: spotmicroai.slack.com (#spotmicro-esp32)~ Due to no active subscription there is no possibility to browse through older posts. This is why a lot of people moved to the discord channel.
 
-This Project currently lacks the whole programming/software part. Luckily Maarten Weyn already made the inverse kinematics work and wrote also an Smartphone App for simple Control of this Robot via BLE. I advice to take a look into his Repository as well, as this currently my preferred codebase:
-https://github.com/maartenweyn/SpotMicro_ESP32
+## Overview
+This SpotMicroESP32 project fork is designed to provide a more modular and user-friendly experience, particularly for those interested in robotics and DIY projects. With the added support for the FS-i6 transmitter and a custom PCB, users now have more flexible and powerful ways to interact with and program their robot dog.
 
-An walking gait implementation and voice-commanding was achieved by Guna R. from the slacks #spotmicro-esp32 channel, whis is build upon Maartens software (see Repo above). You definitly have to take a look there as well - but it seems the repo is incomplete and missing the app:
-https://github.com/cholan2100/ceasar
+Key Enhancements in This Fork
 
-Look also at the GitLab pages for the general SpomicroAI community, where you can find different models and resources: https://gitlab.com/custom_robots/spotmicroai
+- Arduino Code Integration: Weâ€™ve added Arduino-based code that simplifies control logic, particularly for managing the SpotMicroâ€™s movement and gait sequences. This code is compatible with the FS-i6 hobby controller, allowing for responsive joystick-based navigation.
+
+- Custom PCB Design: The custom PCB allows for better organization and management of SpotMicroâ€™s hardware components, providing dedicated ports for servos, the ESP32, power distribution, and sensor connections. This streamlined layout reduces wiring complexity and optimizes power delivery for consistent performance.
+
+- FS-i6 Transmitter Support: This version supports the FS-i6 transmitter, a popular hobby-grade controller. The controller setup includes the following:
+        Channel Assignments: The first four channels on the FS-i6 are configured to control SpotMicroâ€™s primary movement functions, including forward-backward and left-right directional movement, as well as additional modes like tilt and reverse.
+        Failsafe Configuration: A failsafe mode activates when the signal from the FS-i6 transmitter is lost, ensuring SpotMicro safely stops movement to prevent any unintended actions.
+
+- Improved Movement Control:
+        This fork introduces refined gait sequences and step timings, using our custom Arduino code to achieve smooth, natural movement. The gait cycle has been optimized for simultaneous leg movement, allowing SpotMicro to achieve a faster and more stable walk. (in progress)
+
+- Using the Ramp library for servo control enables smooth interpolation and acceleration for each step phase.
 
 ![SpotMicroESP32](https://github.com/michaelkubina/SpotMicroESP32/blob/master/spotmicroESP32.jpg)
 
@@ -23,82 +33,24 @@ I want to thank Deok-yeon Kim (KDY0523) for his beautyful and well thought out d
 Him sharing the files with an open licence, made it possible to let it grow a community around it. This is why i want to reference to them as well - the SpotMicroAI Community: https://spotmicroai.readthedocs.io/en/latest/
 
 ## Preface
-This is a work-in-progress, with rather loose milestones.
+This is a work-in-progress, so many bugs an issues may still be present.
 
-For 2020 there are two goals:
-- ~to redesign the original parts, so that they could be printed without any support~ (done)
-- ~to make a circuitry for all sensors and parts, that possibly would fit and be considered necessary~ (done)
+## Features
+- Modular Code Structure: Each feature is built modularly, making it easier to update individual components without affecting the entire codebase.
+- Inverse Kinematics Adjustments: The coordinate system is adapted to provide precise control over each leg, enhancing SpotMicroâ€™s ability to mimic natural walking movements.
+- Customizable Gait and Deadzone Control: Includes deadzones for both the forward-backward (FB) and left-right (LR) joystick axes, enhancing movement accuracy. Additional gait options allow for different walking styles, including a square gait cycle with improved vertical foot lift.
 
-For 2021 there are two main goals and one optional goal:
-- to write my own firmware with the [ESP-IDF](https://github.com/michaelkubina/SpotMicroESP32/tree/master/code#esp-idf), that integrates/utilizes all sensors and modules except the ESP-CAM which needs its own firmware (in progress)
-- to write a smartphone App in Flutter, that connects to the firmware and reads from/writes to the robot (in progress)
-- to implement the inverse kinematics (optional goal)
+This repository is currently just my hobby and as such, it will have its own pace.
 
-This repository is currently just my hobby and as such, it will have its own pace. This being said, i am still happy about any questions, collaborations, suggestions, ideas, forks and what else comes to your mind. I want you to participate, because i think there are a lot of things, that you could dig into.
+## Repo/Code Usage Aims
+- Basic Walking and Navigation: Use the FS-i6 joystick to control SpotMicroâ€™s direction. Push forward to walk, pull back to reverse, and move the stick left or right to turn.
+- Tilt Mode: This mode enables the robot to rotate its head and upper body, controlled by the joystick to look at objects from different angles.
+- Failsafe Activation: If the FS-i6 loses signal, SpotMicro automatically stops, ensuring safety during operation.
 
-## Sections
+Additional Resources
 
-* [3D-printed Partlist](https://github.com/michaelkubina/SpotMicroESP32/blob/master/parts/SpotMicroESP32_parts_v1_0_0/)
-* [Bill of Materials](https://github.com/michaelkubina/SpotMicroESP32/#bill-of-material)
-* [Assembly Guide](https://github.com/michaelkubina/SpotMicroESP32/blob/master/assembly/)
-* [Electronics](https://github.com/michaelkubina/SpotMicroESP32/blob/master/electronics/)
-* [Programming](https://github.com/michaelkubina/SpotMicroESP32/blob/master/code/)
-* [Inverse Kinematics](https://github.com/michaelkubina/SpotMicroESP32/blob/master/kinematics/)
+For more information on hardware assembly, code structure, and future updates, please refer to the [original repository](https://github.com/michaelkubina/SpotMicroESP32) and check out the documentation in this fork for specific PCB and code setup details.
 
-## Bill of Material
-The following Section will describe in detail the different parts needed for your own SpotMicroESP32 build, with at least some rough estimate of the price.
+## PCB Costs
+The following Section will describe in detail the different parts needed for your own PCB SpotMicroESP32 build, with at least some rough estimate of the price.
 
-### 3D-Printing
-To build your own SpotMicroESP32 you will need to print a lot parts. For an overview of the 3D printed parts needed, please visit the [3D-printed Partlist](https://github.com/michaelkubina/SpotMicroESP32/blob/master/parts/SpotMicroESP32_parts_v1_0_0/). It might be necessary to remix some of the templates to suit your needs, when chosing other electronic components than those listet here.
-
-### Electronics
-The SpotMicroESP32 ist still a Work-in-Progress and as such the BOM might change as well - check the "deprecated" section for changes. There are still some parts missing and some others are not tested yet - those status will be marked as such. I will give a rough price estimate, which may or may not work for you and might be out of date at some point.
-
-| part or module | number | short description | status | estimated price | 
-|----------------|--------|-------------------|--------|:-------------------------|
-| ESP32-DevKitC 							|  1x | the core MCU for the build with WIFI + BLE capabilities. 											| tested			| 7€		|
-| ESP32-CAM									|  1x | Tested with the ESP32-Module with OV2640 Camera (version 2). There are also cameras with a version 1 OV2640, where the sensor is in landscape orientation and not in portrait. Also the flexcable seems to be some millimeters shorter than the one from Version 2. You can distinguish them by the imprint on the flexcable, stating TY-OV2640-V2.0. Both OV2640 Cameras should work in theory, as the part is designed to fit both models. Definetly dont go with the one with an fisheye-lens or other variations - the field of view would be hindered and most likely the lens would not fit through the hole anyway. 																		| tested	| 10€		|
-| FT232RL USB-TTL-Adapter					|  1x | USB-to-Serial Adapter for ESP32-CAM flashing														| tested			| 2€		|
-| (MG996R Servo)								| 12x | The bare minimum... but with flaws like jittering and much play... 10Kg servos with metal gears and ball bearings. With these the robot is capable to stand up/change his pose but they are most likely too weak for smooth and reliable walking. **(Update 2020-11-19: It can be affirmed, that walking is possible not great, but also not horrible)** Go with these only if you can accept these limitations and if more expensive servos would mean not to try this project in the first place.  										| tested			| 5€ each 	|
-| better go with DS3218MG Servo 			| up to 12x | 20Kg servos with metal gears and ball bearings. Much less play and in my tests no jittering, but also very strong. With these your robot should be able to walk **significantly better**. Maybe only 4 of these are enough, when used in the lower legs - the most stressed parts. Maybe you would need also 4 additional ones for the upper legs - but maybe MG996R are enough here. The shoulders should be comfortable with MG996R, as these dont do much heavy work.  														| partially tested	| 15€-20€ each 	|
-| FSH6S Servohorn 							| 12x | servohorn used for this build (should be already shipped with your servos) otherwie use model from 3D parts 							| tested 			| n.n. 		|
-| Rubber Dampeners for your Servos			| 48x | servo rubber dampeners, so you could use M3 screws (should be already shipped with your servos) 	| tested 			| n.n. 		|
-| Servocable Extension						|  4x | extending the servocables of the lower legs about 10cm to 15cm 										| tested			| 10€		|
-| 625ZZ Ball Bearing 						|  8x | miniature ball bearing without a flange 															| tested 			| 1€ each 	|
-| WS2812b 12 LED Ring (50mm outer diameter) |  1x | Neopixel-Clone-Ring with an outer diameter of 50mm used to signal status/mood						| tested            | 6€        |
-| 0.96" OLED I2C Display					|  1x | small OLED screen with SSD1306 IC for status informations											| tested			| 4€		|
-| HC-SR04 Ultrasonic Sensor					|  2x | ultrasonic sensor module for distance measuring														| tested			| 3€ each	|
-| GY-521 Gyroscope and Accelerometer		|  1x | a module to measure accelaration and spatial orientation, which can be extented with magnetometers  | tested			| 3€		|
-| PCA9685 16Channel 12Bit PWM Board			|  1x | PWM driver board used for your servos and LEDs, which can power your parts from an external source	| tested			| 5€		|
-| HW-482 / KY-019 5V 10A Relais				|  1x | relais module to cut the power to your servos completely											| tested			| 3€		|
-| 19mm Push Button with LED					|  1x | illuminated latching pushbutton 																	| tested			| 10€		|
-| Micro-USB to DIP Adapter					|  2x | USB-Ports used for extending the USB-Ports of the ESP32 DevKitC and ESP32-CAM (TTL-Adapter)			| tested			| 2€		|
-| XL4016 DC-DC 9A Stepdown Converter  		|  1x | big step-down converter to lower your LiPo 2S voltage to 6,5V **(minimum for MG996R)** | tested		    | 8€		|
-| or SZBK07 DC-DC 20A Stepdown Converter  	|  1x | even bigger step-down converter to lower your LiPo 2S voltage to 6,5V **(minimum for DS3218)**	| tested		    | 12€		|
-| LM2596 DC-DC or similar Stepdown Module	|  1x | small step-down converter to lower your LiPo 2S voltage 5V for ESP32's VIN and Modules 				| tested			| 2€ each	|
-| ACS712 30A current sensor module			|  1x | current sensor module capable of max. 30A for e.g. emergency shutdown				 				| tested			| 2€ 		|
-| 25V voltage sensor module					|  1x | simple voltage divider module for up to 25V used as a voltage sensor to determin battery charge		| tested			| 2€ 		|
-| 5200mAh - 6200mAh LiPo 30C+ 2S Tamiya/XH	|  1x | beefy LiPo as your main power source ***(this is actually your individual choice)***				| tested		 	| 40€		|
-
-#### Depecrated
-
-The Camera-Unit in the head will be replaced by an ESP32-CAM, because its reasonably cheap (~10€) and opens up a lot of new possibilities like object-recognition, because of additional processing-power.
-
-| part or module | number | short description | status | estimated price | 
-|----------------|--------|-------------------|--------|:-------------------------|
-| OV7670 VGA-Camera Module w/o FIFO			|  1x | VGA-Camera without framebuffer IC, used with lower resolution due to memory restrictions **(replaced by ESP32-CAM)**			| tested			| 3€		|
-| 5mm ~3V LEDs (White)						|  6x | LEDs used as your camera-lights	**(replaced by ESP32-CAM internal flashlight)**													| tested			| 1€		|
-| 5mm ~3V RGB-LEDs							|  2x | RGB-LEDs used as an underglow, might signal status or mood **(replaced by Neopixel-Generica)**									| tested			| 1€		|
-| 1,77" TFT with ST7735 w/o SD				|  1x | small TFT screen with ST7735 IC for status informations **(replaced by 1.8" TFT with SD-Card)**									| tested			| 7€		|
-| optional WS2812B Pixelboard				|  4x | Neopixel-Clones (SMD LED's on small round PCB) used as an underglow, might signal status or mood	**(removed, as the result is underwealming** | tested			| 1€		|
-| 1,8" TFT with ST7735 with SD				|  1x | small TFT screen with ST7735 IC for status informations	**(replaced by 0.96" OLED I2C Display)**	 |tested			| 7€		|
-
-### Miscellaneous
-
-| part or module | number | short description | status | estimated price | 
-|----------------|--------|-------------------|--------|:-------------------------|
-| M2x8 cylinderhead screws + M2 nuts		| 84x each | screws + nuts to mount your servohorns ***(you could glue the servohorns in place instead and save yourself 72x M2x8 screws and nuts, but i have not tested it)***, also used to mount the 1,77" TFT and the pins for the ball bearings 	| tested | 8€  |
-| M3x8 cylinderhead screws + M3 nuts		| 80x each | screws + nuts for the whole assembly ***(i hope i have not forgotten some, better buy in bulk as these are usefull for other projects as well)***																							| tested | 8€  |
-| M3x20 cylinderhead screws + M3 nuts		| 64x each | screws + nuts to mount your servos and assemble the upper legs																																												| tested | 12€ |
-| lots of cables and connectors and stuff	|          | it's up to you which cables or wires and connectors you want to use, or if you would like to solder everything into place, and if you use heat shrinks, fabric hoses 																		| up to you | 20€ |
-| PLA + TPU (***?***)						|          | you will need about 1Kg of PLA + some grams of TPU (eg. my Black/White design: 500g for the covers + upper legs, 500g for the chassis + lower legs + shoulder joints, some small grams for the grey sensorplate in the head) + some grams of TPU for the foottips | tested | 30€+ |
