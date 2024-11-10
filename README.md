@@ -12,23 +12,25 @@ This SpotMicroESP32 project fork is designed to provide a more modular and user-
 
 Key Enhancements in This Fork
 
-- Arduino Code Integration: We’ve added Arduino-based code that simplifies control logic, particularly for managing the SpotMicro’s movement and gait sequences. This code is compatible with the FS-i6 hobby controller, allowing for responsive joystick-based navigation.
+### Arduino Code Integration: 
+- I've added Arduino-based code that simplifies control logic, particularly for managing the SpotMicro’s movement and gait sequences. This code is compatible with the FS-i6 hobby controller, allowing for responsive joystick-based navigation.
 
-- Custom PCB Design: The custom PCB allows for better organization and management of SpotMicro’s hardware components, providing dedicated ports for servos, the ESP32, power distribution, and sensor connections. This streamlined layout reduces wiring complexity and optimizes power delivery for consistent performance.
+### Custom PCB Design: 
+- The custom PCB allows for better organization and management of SpotMicro’s hardware components, providing dedicated ports for servos, the ESP32, power distribution, and sensor connections. This streamlined layout reduces wiring complexity and optimizes power delivery for consistent performance.
 
-- FS-i6 Transmitter Support: This version supports the FS-i6 transmitter, a popular hobby-grade controller. The controller setup includes the following:
+### FS-i6 Transmitter Support: 
+- This version supports the FS-i6 transmitter, a popular hobby-grade controller. The controller setup includes the following:
         Channel Assignments: The first four channels on the FS-i6 are configured to control SpotMicro’s primary movement functions, including forward-backward and left-right directional movement, as well as additional modes like tilt and reverse.
         Failsafe Configuration: A failsafe mode activates when the signal from the FS-i6 transmitter is lost, ensuring SpotMicro safely stops movement to prevent any unintended actions.
 
-- Improved Movement Control:
-        This fork introduces refined gait sequences and step timings, using our custom Arduino code to achieve smooth, natural movement. The gait cycle has been optimized for simultaneous leg movement, allowing SpotMicro to achieve a faster and more stable walk. (in progress)
-
-- Using the Ramp library for servo control enables smooth interpolation and acceleration for each step phase.
+### Improved Movement Control:
+- This fork introduces refined gait sequences and step timings, using our custom Arduino code to achieve smooth, natural movement. The gait cycle has been optimized for simultaneous leg movement, allowing SpotMicro to achieve a faster and more stable walk. (in progress)
+- (Future) Using the Ramp library for servo control enables smooth interpolation and acceleration for each step phase.
 
 ![SpotMicroESP32](https://github.com/michaelkubina/SpotMicroESP32/blob/master/spotmicroESP32.jpg)
 
 ## Note of thanks
-I want to thank Deok-yeon Kim (KDY0523) for his beautyful and well thought out design of the SpotMicro, without whom my derivate would not have been possible. You can find his original Design here on Thingiverse: https://www.thingiverse.com/thing:3445283
+I want to thank Deok-yeon Kim (KDY0523) for his beautiful and well thought out design of the SpotMicro, without whom this derivate would not have been possible. You can find his original Design here on Thingiverse: https://www.thingiverse.com/thing:3445283
 
 Him sharing the files with an open licence, made it possible to let it grow a community around it. This is why i want to reference to them as well - the SpotMicroAI Community: https://spotmicroai.readthedocs.io/en/latest/
 
