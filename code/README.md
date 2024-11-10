@@ -5,7 +5,7 @@ This directory contains the Arduino code for controlling the SpotMicroESP32 robo
 ## Coding by Charlie Frater ##
 
 - Below is some instructions on how to quickstart the provided (current) Arduino Code.
-- 
+
 ## Features
 
 - **Joystick-Controlled Movement**: Supports forward-backward (FB) and left-right (LR) control using the FS-i6 transmitter, with configurable deadzones for precise control.
