@@ -1,4 +1,4 @@
-# SpotMicroESP32 - Nitro Fork
+# SpotMicroESP32 - Nitro Fork -Arduino Code
 
 This fork of the SpotMicroESP32 project builds on the excellent foundation by michaelkubina. It introduces several enhancements, including new features for Arduino code integration, a custom PCB design, and support for the FS-i6 hobby controller, making it easier to control and expand the functionality of the SpotMicro robot dog. This version also uses the ESP32-DevKitC. Work-in-Progress!
 
