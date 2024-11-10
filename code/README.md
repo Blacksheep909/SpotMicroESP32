@@ -73,7 +73,7 @@ This directory contains the Arduino code for controlling the SpotMicroESP32 robo
 
 ### Code Flowchart
 
-![Flowchart](code/detailed_robot_dog_flowchart.png)
+![Flowchart](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/code/detailed_robot_dog_flowchart.png)
 
 
 
