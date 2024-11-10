@@ -71,6 +71,9 @@ This directory contains the Arduino code for controlling the SpotMicroESP32 robo
 - **Failsafe Activation**:
   - When the FS-i6 signal is lost, the robot stops moving automatically and returns to idle position.
 
+##Code Flowchart
+
+
 ## Contributing
 
 For contributions or to report issues, please contact us or open an issue in this fork’s repository.
