@@ -32,7 +32,7 @@ Key Enhancements in This Fork
 ## Note of thanks
 I want to thank Deok-yeon Kim (KDY0523) for his beautiful and well thought out design of the SpotMicro, without whom this derivate would not have been possible. You can find his original Design here on Thingiverse: https://www.thingiverse.com/thing:3445283
 
-Him sharing the files with an open licence, made it possible to let it grow a community around it. This is why i want to reference to them as well - the SpotMicroAI Community: https://spotmicroai.readthedocs.io/en/latest/
+Him sharing the files with an open licence, made it possible to let it grow a community around it. This is why I want to reference to them as well - the SpotMicroAI Community: https://spotmicroai.readthedocs.io/en/latest/
 
 ## Preface
 This is a work-in-progress, so many bugs an issues may still be present.
