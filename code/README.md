@@ -75,7 +75,7 @@ This directory contains the Arduino code for controlling the SpotMicroESP32 robo
 
 ![Flowchart](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/code/detailed_robot_dog_flowchart.png)
 
-#Future development
+# Future development
 - The gait and inverse kinematics are currently still in the early-ish side of development. They work, but can always be better of course.
 - I would like to add a tilt mode feature where the user can look around with the dog using a joystick.
 - Another feature I would like to add is a move advanced walking gait -this is currently my main aim with the code
