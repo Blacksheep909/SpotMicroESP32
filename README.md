@@ -27,7 +27,7 @@ Key Enhancements in This Fork
 - This fork introduces refined gait sequences and step timings, using our custom Arduino code to achieve smooth, natural movement. The gait cycle has been optimized for simultaneous leg movement, allowing SpotMicro to achieve a faster and more stable walk. (in progress)
 - (Future) Using the Ramp library for servo control enables smooth interpolation and acceleration for each step phase.
 
-![SpotMicroESP32](https://github.com/michaelkubina/SpotMicroESP32/blob/master/spotmicroESP32.jpg)
+![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/20241112_144816(1).jpg)
 
 ## Note of thanks
 I want to thank Deok-yeon Kim (KDY0523) for his beautiful and well thought out design of the SpotMicro, without whom this derivate would not have been possible. You can find his original Design here on Thingiverse: https://www.thingiverse.com/thing:3445283
