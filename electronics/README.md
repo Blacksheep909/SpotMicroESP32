@@ -1,4 +1,5 @@
 ### Overview of the PCB Design and Installation
+![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/Screenshot%202024-11-11%20003432.png)
 
 The provided PCB template is designed to simplify the assembly and wiring of your robot dog. It's intended as a flexible base where you can easily install components by soldering female pin headers onto the board. This allows components to be attached or removed as needed without complex soldering each time. 
 
@@ -45,7 +46,6 @@ Here are images of the board and setup to help guide you through the assembly:
 
 1. **Robot Dog’s Internal Setup**:
    ![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/Screenshot%202024-11-11%20002821.png)
-   ![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/Screenshot%202024-11-11%20003432.png)
    - This image shows the internal layout of the robot, with components neatly arranged on the PCB template. The wiring is organized to prevent interference and keep the system stable.
 
 3. **PCB Design (Front and Back)**:
