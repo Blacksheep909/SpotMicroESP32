@@ -75,9 +75,9 @@ In this current code iteration, we’ve set up inverse kinematics (IK) to calcul
 ### Gait Sequences in `WalkFunc`
 ![Gait Pattern](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/gait_timer_illustrate.jpg)
 
-Above, is a photo which illustrates the current (soon to be outdated) gait cycle, with 'x' being the ground plane. 
-*Gait cycles can easily be planned out in [Desmos Calculator](https://www.desmos.com/calculator), by typing in coordinates directly eg:* **(0,0)**
-The `WalkFunc` function controls the robot’s gait (movement pattern) based on joystick input:
+   - Above, is a photo which illustrates the current (soon to be outdated) gait cycle, with 'x' being the ground plane. 
+   - *Gait cycles can easily be planned out in [Desmos Calculator](https://www.desmos.com/calculator), by typing in coordinates directly eg:* **(0,0)**
+   - The `WalkFunc` function controls the robot’s gait (movement pattern) based on joystick input and ramps velocity of the gait based on joystick position:
 
 1. **Joystick Control for Forward and Reverse Walking (NUMBERS ACCURATE TO CURRENT GAIT CYCLE)**
    - A deadzone is implemented to prevent small joystick movements from triggering unintended steps.
