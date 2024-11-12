@@ -1,6 +1,6 @@
 # SpotMicroESP32 Arduino Code- Nitro Fork
 
-This fork of the SpotMicroESP32 project builds on the excellent foundation by michaelkubina. It introduces several enhancements, including new features for Arduino code integration, a custom PCB design, and support for the FS-i6 hobby controller, making it easier to control and expand the functionality of the SpotMicro robot dog. This version also uses the ESP32-DevKitC. Work-in-Progress!
+This fork of the SpotMicroESP32 project builds on the excellent foundation by michaelkubina. It introduces several enhancements, including new features for Arduino code integration, a custom PCB design, and support for the FS-i6X hobby controller, making it easier to control and expand the functionality of the SpotMicro robot dog. This version also uses the ESP32-DevKitC. Work-in-Progress!
 
 You can find the 3D-printing parts on Thingiverse as well: https://www.thingiverse.com/thing:4559827/files
 (There are a few modification files in this repo for updated metal servo horns, which I fully recommend using)
@@ -8,7 +8,7 @@ You can find the 3D-printing parts on Thingiverse as well: https://www.thingiver
 - Join the Discord-Channel for this remix: https://discord.gg/s8F6xHGk9Y (#spotmicro-esp32)
 
 ## Overview
-This SpotMicroESP32 project fork is designed to provide a more modular and user-friendly experience, particularly for those interested in robotics and DIY projects. With the added support for the FS-i6 transmitter and a custom PCB, users now have more flexible and powerful ways to interact with and program their robot dog.
+This SpotMicroESP32 project fork is designed to provide a more modular and user-friendly experience, particularly for those interested in robotics and DIY projects. With the added support for the FS-i6X transmitter and a custom PCB, users now have more flexible and powerful ways to interact with and program their robot dog.
 
 Key Enhancements in This Fork
 
@@ -18,10 +18,10 @@ Key Enhancements in This Fork
 ### Custom PCB Design: 
 - The custom PCB allows for better organization and management of SpotMicro’s hardware components, providing dedicated ports for servos, the ESP32, power distribution, and sensor connections. This streamlined layout reduces wiring complexity and optimizes power delivery for consistent performance.
 
-### FS-i6 Transmitter Support: 
-- This version supports the FS-i6 transmitter, a popular hobby-grade controller. The controller setup includes the following:
-        Channel Assignments: The first four channels on the FS-i6 are configured to control SpotMicro’s primary movement functions, including forward-backward and left-right directional movement, as well as additional modes like tilt and reverse.
-        Failsafe Configuration: A failsafe mode activates when the signal from the FS-i6 transmitter is lost, ensuring SpotMicro safely stops movement to prevent any unintended actions.
+### FS-i6X Transmitter Support: 
+- This version supports the FS-i6X transmitter, a popular and powerful hobby-grade controller. The controller setup includes the following:
+        Channel Assignments: The first four channels on the FS-iX6 are configured to control SpotMicro’s primary movement functions, including forward-backward and left-right directional movement, as well as additional modes like tilt and reverse.
+        Failsafe Configuration: A failsafe mode activates when the signal from the FS-i6X transmitter is lost, ensuring SpotMicro safely stops movement to prevent any unintended actions.
 
 ### Improved Movement Control:
 - This fork introduces refined gait sequences and step timings, using our custom Arduino code to achieve smooth, natural movement. The gait cycle has been optimized for simultaneous leg movement, allowing SpotMicro to achieve a faster and more stable walk. (in progress)
@@ -45,9 +45,9 @@ This is a work-in-progress, so many bugs an issues may still be present.
 This repository is currently just my hobby and as such, it will have its own pace.
 
 ## Repo/Code Usage Aims
-- Basic Walking and Navigation: Use the FS-i6 joystick to control SpotMicro’s direction. Push forward to walk, pull back to reverse, and move the stick left or right to turn.
+- Basic Walking and Navigation: Use the FS-i6X joystick to control SpotMicro’s direction. Push forward to walk, pull back to reverse, and move the stick left or right to turn.
 - Tilt Mode: This mode enables the robot to rotate its head and upper body, controlled by the joystick to look at objects from different angles.
-- Failsafe Activation: If the FS-i6 loses signal, SpotMicro automatically stops, ensuring safety during operation.
+- Failsafe Activation: If the FS-i6X loses signal, SpotMicro automatically stops, ensuring safety during operation.
 
 Additional Resources
 
