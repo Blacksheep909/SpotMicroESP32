@@ -4,12 +4,7 @@
 
 The length-measurements of the legs is performed on the centers of the rotational axis and from the perspective of the foot tip touching the ground in its center.
 
-* L1: 10mm
-* L2: 60,5mm
-* L3: 111,1mm (resp. L3a: 107mm / L3b: 30mm)
-* L4: 118,5mm
-
-The foottip actually just elevates the body 20mm from the ground on every leg and is because of this is disregarded for now.
+The foot-tip actually just elevates the body 20mm from the ground on every leg and is because of this is disregarded for now.
 
 ![L1_L2](https://github.com/michaelkubina/SpotMicroESP32/blob/master/kinematics/L1_L2.png)
 
