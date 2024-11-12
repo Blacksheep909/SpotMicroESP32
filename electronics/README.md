@@ -50,7 +50,7 @@ Here are images of the board and setup to help guide you through the assembly:
    ![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/finishedpcb.jpg)
    ![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/finishedwideangle.jpg)
    - This image shows the internal layout of the robot, with components neatly arranged on the PCB template. The wiring is "organized" so that the top cover will fit on.
-
+   - You may notice an extra switch for the FS-i6B Reciever for power -this is no longer neccesary, as the code now has a way of disabling noise from the reciever when uploading new code.
 3. **PCB Design**:
    ![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/Screenshot%202024-11-11%20002821.png)
    
