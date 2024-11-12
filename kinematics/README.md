@@ -76,7 +76,7 @@ In this current code iteration, we’ve set up inverse kinematics (IK) to calcul
 ![Gait Pattern](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/gait_timer_illustrate.jpg)
 
 Above, is a photo which illustrates the current (soon to be outdated) gait cycle, with 'x' being the ground plane. 
-*Gait cycles can easily be planned out in https://www.desmos.com/calculator, by typing in coordinates directly eg: (0,0)*
+*Gait cycles can easily be planned out in [Desmos Calculator](https://www.desmos.com/calculator), by typing in coordinates directly eg:* **(0,0)**
 The `WalkFunc` function controls the robot’s gait (movement pattern) based on joystick input:
 
 1. **Joystick Control for Forward and Reverse Walking (NUMBERS ACCURATE TO CURRENT GAIT CYCLE)**
@@ -99,8 +99,8 @@ Each step in the gait cycle triggers the `stepfrbl` or `stepflbr` functions, whi
 ### Summary
 
 This code provides a foundation for controlling the robot dog's legs using inverse kinematics. However:
-   - The IK model doesn’t include shoulder joints, limiting the flexibility of the front legs.
-   - The coordinate system is rotated to match the dog's orientation, with the positive y-axis facing forward.
+   - The IK model doesn’t include shoulder joints, limiting the flexibility of the robot.
+   - The coordinate system is rotated to match the dog's orientation, with the positive y-axis facing forward (I intend to fix this an make the y-axis vertical).
    
 ### Next Steps
 
