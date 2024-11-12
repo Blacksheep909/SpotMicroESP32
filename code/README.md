@@ -89,5 +89,3 @@ There are many other things I am likely forgetting, and of course this will happ
 
 ### My Discord is blacksheep909 if you would like to contact me
 ---
-
-Everything you need to know, can be found in the [Official ESP-IDF API Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/index.html)	alongside with many linked example-projects to their [Github Examples Page](https://github.com/espressif/esp-idf/tree/master/examples).
