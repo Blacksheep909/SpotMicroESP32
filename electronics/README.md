@@ -51,7 +51,7 @@ Here are images of the board and setup to help guide you through the assembly:
    ![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/finishedwideangle.jpg)
    - This image shows the internal layout of the robot, with components neatly arranged on the PCB template. The wiring is organized to prevent interference and keep the system stable.
 
-3. **PCB Design (Front and Back)**:
+3. **PCB Design**:
    ![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/Screenshot%202024-11-11%20002821.png)
    
    - This shows the layout of the PCB with labeled areas for each component. Follow these labels to install each part correctly.
