@@ -53,3 +53,8 @@ Additional Resources
 
 For more information on hardware assembly, code structure, and future updates, please refer to the [original repository](https://github.com/michaelkubina/SpotMicroESP32) and check out the documentation in this fork for specific PCB and code setup details.
 
+## Contributing
+
+- For contributions or to report issues, please contact us or open an issue in this fork’s repository.
+
+### My Discord is blacksheep909 if you would like to contact me
