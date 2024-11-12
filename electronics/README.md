@@ -60,7 +60,7 @@ Here are images of the board and setup to help guide you through the assembly:
    ![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/image.png)
    - The schematic provides a complete wiring overview, detailing connections between the ESP32, sensors, motor drivers, and other peripherals.
 
-   ## It is updated from the original schematic as two of the I2C were moved to accomodate the ESP32 DevKitC V4. 
+   ## This schematic is updated from the original schematic as two of the I2C were moved to accomodate the ESP32 DevKitC V4. 
 
 
 ### SERVO DRIVER - PCA9685 ###
