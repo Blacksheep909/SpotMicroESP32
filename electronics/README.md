@@ -1,70 +1,63 @@
-﻿# Electronics #
+### Overview of the PCB Design and Installation
 
-![Circuitry Milestone](https://github.com/michaelkubina/SpotMicroESP32/blob/master/electronics/circuitry_working.jpg)
+The provided PCB template is designed to simplify the assembly and wiring of your robot dog. It's intended as a flexible base where you can easily install components by soldering female pin headers onto the board. This allows components to be attached or removed as needed without complex soldering each time. 
 
-## Resources ##
+This board includes pinouts for every expected component, such as:
 
-You can find an excel-sheet in this sections, which describes the basic pin-assignments. You can find older documents in the archives subfolder.
+- **ESP32 Dev Kit**: Used as the primary microcontroller.
+- **iBus RC Receiver (FS-i6B)**: For remote control capability.
+- **PCA9685**: Controls servo motors.
+- **Voltage and Current Sensors**: Monitors power levels.
+- **Ultrasonic Sensors**: For object detection.
+- **OLED Display**: For real-time feedback display.
+- **Relay Module (KY-019)**: To control high-power components.
+- **IMU (MPU6050)**: For motion tracking.
 
-## Wiring ##
+The design also anticipates future additions, like an **ESP32-CAM** module, but currently, the appropriate pinouts are NOT included.
 
-When wiring your own robot, think of some kind of color coding for your wires, so its easier to distuingish them - for example:
-* 5V with violett wires
-* 3.3V with red wires
-* I2C Clock white
-* I2C Data grey
-* Analog Signals ocker 
-* etc...
+### Installation Instructions
 
-![Fritzing Diagram](https://github.com/michaelkubina/SpotMicroESP32/blob/master/electronics/2020-02-03_Circuitry_final.png)
+- There are multiple ways of approaching the PCBs components, one is two use female pin headers, which lets you easily attach/detach components. The other method is not using female pins, and directly soldering the components to the board.
 
-## Images ##
+1. **Soldering Female Pin Headers**: Begin by soldering female pin headers to the PCB. There are two way sThis setup enables you to plug in each component rather than soldering them directly, making it easier to swap out or troubleshoot components.
 
-Some images from my build, but not the latest - update in development.
+2. **Mounting the ESP32**: Insert the ESP32 Dev Kit into the designated header pins on the PCB. This board will serve as the main control unit, connecting to other components through the pin headers.
 
-![Circuit Overview](https://github.com/michaelkubina/SpotMicroESP32/blob/master/electronics/images/electronics_0001.jpg)
-![Circuit Overview](https://github.com/michaelkubina/SpotMicroESP32/blob/master/electronics/images/electronics_0002.jpg)
-![Circuit Overview](https://github.com/michaelkubina/SpotMicroESP32/blob/master/electronics/images/electronics_0003.jpg)
-![Circuit Overview](https://github.com/michaelkubina/SpotMicroESP32/blob/master/electronics/images/electronics_0004.jpg)
-![Circuit Overview](https://github.com/michaelkubina/SpotMicroESP32/blob/master/electronics/images/electronics_0005.jpg)
-![Circuit Overview](https://github.com/michaelkubina/SpotMicroESP32/blob/master/electronics/images/electronics_0006.jpg)
-![Circuit Overview](https://github.com/michaelkubina/SpotMicroESP32/blob/master/electronics/images/electronics_0007.jpg)
-![Circuit Overview](https://github.com/michaelkubina/SpotMicroESP32/blob/master/electronics/images/electronics_0008.jpg)
+3. **Connecting the PCA9685 Servo Driver**: Insert the PCA9685 module into the specific header on the PCB. This module controls the servos, allowing precise movement of the robot's legs.
+
+4. **Adding Sensors**:
+   - **Voltage and Current Sensors**: These sensors plug into their designated slots and help monitor power usage, which is especially useful for managing battery life.
+   - **Ultrasonic Sensors**: These can be added in the front of the robot to help detect obstacles and avoid collisions.
+
+5. **Connecting the RC Receiver (FS-i6B)**: The iBus receiver plugs into the board and allows remote control of the robot through the FS-i6B transmitter. This receiver supports multiple channels, giving you control over various functions of the robot dog.
+
+6. **OLED Display and Relay Module**:
+   - **OLED Display**: Plug in the OLED to display data like battery voltage, current action state, and other information.
+   - **Relay Module (KY-019)**: The relay module slot is ready to handle higher power components safely.
+
+### Future Expansion
+
+The PCB has additional pinouts, including one for an ESP32-CAM module, which can be used for streaming video or advanced vision processing. This slot is not yet populated, but the design allows for easy addition in the future, with straightforward integration into the control system.
+
+### Example Images
+
+Here are images of the board and setup to help guide you through the assembly:
+
+1. **Robot Dog’s Internal Setup**:
+   - This image shows the internal layout of the robot, with components neatly arranged on the PCB template. The wiring is organized to prevent interference and keep the system stable.
+
+2. **PCB Design (Front and Back)**:
+   - This shows the layout of the PCB with labeled areas for each component. Follow these labels to install each part correctly.
+
+3. **Wiring Schematic**:
+   - The schematic provides a complete wiring overview, detailing connections between the ESP32, sensors, motor drivers, and other peripherals.
+
+By following these instructions, you’ll be able to assemble a fully functional robot dog with modular components, thanks to the custom PCB template. This setup allows easy adjustments, upgrades, and troubleshooting while maintaining a clean and organized internal layout.
 
 ### SERVO DRIVER - PCA9685 ###
 
 Manufacturer Homepage: https://www.nxp.com/products/power-management/lighting-driver-and-controller-ics/ic-led-controllers/16-channel-12-bit-pwm-fm-plus-ic-bus-led-controller:PCA9685
 Datasheet: https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf
-
-The PCA9685 is capable of FastMode+ (I2C clock at 1Mhz) - it should have its own I2C bus - which gives us more update cycles on the servos. The MG996R even though most tutorials and sellers claim their working frequency to be 50Hz, we can actually go to even 333Hz and beyond. The limit is only the 12Bit resolution and the maximum value for your servo for the max-angle. The pulsewidth of about 2ms + about 0.3ms is whats relevant for the IC in these digital servos.
-
-Do not use Standard Mode - 100KHz
-Do not use FastMode - 400KHz
-Go with FastMode+ - 1MHz
-
-| Channel | Servo | Abbreviation        |
-|---------|-------|---------------------|
-| CH0     | Front Left Shoulder   | FLS |
-| CH1     | Front Left Upper Leg  | FLU |
-| CH2     | Front Left Lower Leg  | FLL |
-| CH3     | Front Right Shoulder  | FRS |
-| CH4     | Front Right Upper Leg | FRU |
-| CH5     | Front Right Lower Leg | FRL |
-| CH6     | Rear Left Shoulder    | RLS |
-| CH7     | Rear Left Upper Leg   | RLU |
-| CH8     | Rear Left Lower Leg   | RLL |
-| CH9     | Rear Right Shoulder   | RRS |
-| CH10    | Rear Right Upper Leg  | RRU |
-| CH11    | Rear Right Lower Leg  | RRL |
-| CH12    | x | x |
-| CH13    | x | x |
-| CH14    | x | x |
-| CH15    | x | x |
-
-### CURRENT SENSOR - ACS712 30A ###
-
-Manufacturer Homepage: https://www.allegromicro.com/en/products/sense/current-sensor-ics/zero-to-fifty-amp-integrated-conductor-sensor-ics/acs712
-Datasheet: https://www.allegromicro.com/~/media/files/datasheets/acs712-datasheet.ashx
 
 ### 0,96" OLED - SSD1306 ###
 
