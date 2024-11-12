@@ -46,7 +46,7 @@ In this current code iteration, we’ve set up inverse kinematics (IK) to calcul
    - To make calculations simpler, we adjust the `x` and `y` coordinates to set the paw’s default position as the origin (0,0).
      
    - **(-5,10) is about zeroed out to servo paw default position when standing.**
-   - 
+   
    - Then, we rotate the coordinates by `rotationAngle` to match the orientation of the leg.
 
 #### 4. **Inverse Kinematics Calculations**
