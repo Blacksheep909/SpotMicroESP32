@@ -2,14 +2,14 @@
 -Updated, but not quite finished.
 ## The legs ##
 
-The length-measurements of the legs is performed on the centers of the rotational axis and from the perspective of the foottip touching the ground in its center.
+The length-measurements of the legs is performed on the centers of the rotational axis and from the perspective of the foot tip touching the ground in its center.
 
 * L1: 10mm
 * L2: 60,5mm
 * L3: 111,1mm (resp. L3a: 107mm / L3b: 30mm)
 * L4: 118,5mm
 
-The foot-tip actually just elevates the body 20mm from the ground on every leg and is because of this disregarded for now.
+The foottip actually just elevates the body 20mm from the ground on every leg and is because of this is disregarded for now.
 
 ![L1_L2](https://github.com/michaelkubina/SpotMicroESP32/blob/master/kinematics/L1_L2.png)
 
@@ -69,14 +69,14 @@ In this current code iteration, we’ve set up inverse kinematics (IK) to calcul
      - Adjustments have been made accordingly in the IK function to handle this axis alignment.
 
 ### Gait Sequences in `WalkFunc`
-
+![Gait Pattern](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/gait_timer_illustrate.jpg)
 The `WalkFunc` function controls the robot’s gait (movement pattern) based on joystick input:
 
-1. **Joystick Control for Forward and Reverse Walking**
+1. **Joystick Control for Forward and Reverse Walking (NUMBERS ACCURATE TO CURRENT GAIT CYCLE)**
    - A deadzone is implemented to prevent small joystick movements from triggering unintended steps.
    - Outside the deadzone, the joystick position determines the timing (`stepTimerFB`) for each step in the gait cycle.
    - Forward and reverse gait cycles are defined:
-     - **Forward cycle:** Paw moves in an arc from `(-5,15)` to `(-5,5)`, then repeats.
+     - **Forward cycle:** Paw moves in an arc from `(-5,15)` to `(-5,5)`, then repeats. (these may change with gait interations in the future - 12/11/24)
      - **Reverse cycle:** Paw moves in the reverse order, allowing backward movement.
 
 2. **Forward-Backward (FB) and Left-Right (LR) Modes**
