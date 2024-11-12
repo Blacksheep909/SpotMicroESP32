@@ -2,7 +2,7 @@
 
 This directory contains the Arduino code for controlling the SpotMicroESP32 robot dog. The structure includes files for managing gait, kinematics, and setup procedures, tailored for integration with our custom PCB and the FS-i6 hobby controller.
 
-## Coding by Charlie Frater & Beckett Macdonald##
+## Coding by Charlie Frater & Beckett Macdonald ##
 
 - Below is some instructions on how to quickstart the provided (current) Arduino Code.
 
@@ -26,7 +26,8 @@ This directory contains the Arduino code for controlling the SpotMicroESP32 robo
 
 - **Hardware**:
   - SpotMicroESP32 robot dog with our custom PCB.
-  - FS-i6 hobby controller.
+  - FS-i6X hobby controller.
+![Reciever](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/code/FS-I6X%2B20160331.450(1).png)
 
 - **Software**:
   - [Arduino IDE](https://www.arduino.cc/en/software)
