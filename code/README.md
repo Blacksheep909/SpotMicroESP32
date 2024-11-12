@@ -75,12 +75,18 @@ This directory contains the Arduino code for controlling the SpotMicroESP32 robo
 
 ![Flowchart](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/code/detailed_robot_dog_flowchart.png)
 
+#Future development
+- The gait and inverse kinematics are currently still in the early-ish side of development. They work, but can always be better of course.
+- I would like to add a tilt mode feature where the user can look around with the dog using a joystick.
+- Another feature I would like to add is a move advanced walking gait -this is currently my main aim with the code
+- A missing feature, which is of course fully neccesary is the LR code (left-right), so the dog can actually turn, but currently the shoulders are not included in the inverse kinematics.
 
+There are many other things I am likely forgetting, and of course this will happen in due time, but I am unsure how long they may take -right now my aim is to upload this code to get people kickstarted, and maybe someone will take on the challenge to make it even better!
 
 ## Contributing
 
 For contributions or to report issues, please contact us or open an issue in this fork’s repository.
-
+My Discord is blacksheep909 if you would like to contact
 ---
 
 Everything you need to know, can be found in the [Official ESP-IDF API Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/index.html)	alongside with many linked example-projects to their [Github Examples Page](https://github.com/espressif/esp-idf/tree/master/examples).
