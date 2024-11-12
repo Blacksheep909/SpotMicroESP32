@@ -85,8 +85,9 @@ There are many other things I am likely forgetting, and of course this will happ
 
 ## Contributing
 
-For contributions or to report issues, please contact us or open an issue in this fork’s repository.
-My Discord is blacksheep909 if you would like to contact
+- For contributions or to report issues, please contact us or open an issue in this fork’s repository.
+
+### My Discord is blacksheep909 if you would like to contact
 ---
 
 Everything you need to know, can be found in the [Official ESP-IDF API Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/index.html)	alongside with many linked example-projects to their [Github Examples Page](https://github.com/espressif/esp-idf/tree/master/examples).
