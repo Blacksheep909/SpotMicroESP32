@@ -58,7 +58,6 @@ Here are images of the board and setup to help guide you through the assembly:
    ![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/image.png)
    - The schematic provides a complete wiring overview, detailing connections between the ESP32, sensors, motor drivers, and other peripherals.
 
-By following these instructions, you’ll be able to assemble a fully functional robot dog with modular components, thanks to the custom PCB template. This setup allows easy adjustments, upgrades, and troubleshooting while maintaining a clean and organized internal layout.
 
 ### SERVO DRIVER - PCA9685 ###
 
