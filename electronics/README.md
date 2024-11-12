@@ -37,8 +37,7 @@ The design also anticipates future additions, like an **ESP32-CAM** module, but 
    - **Relay Module (KY-019)**: The relay module slot is ready to handle higher power components safely.
    
 ### Mounting Component Photos
-![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/finishedwideangle.jpg)
-![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/finishedwideangle.jpg)
+![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/pcbassemble.jpg)
 ### Future Expansion
 
 The PCB has additional pinouts, including one for an ESP32-CAM module, which can be used for streaming video or advanced vision processing. This slot is not yet populated, but the design allows for easy addition in the future, with straightforward integration into the control system.
