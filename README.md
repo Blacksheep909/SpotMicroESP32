@@ -53,6 +53,3 @@ Additional Resources
 
 For more information on hardware assembly, code structure, and future updates, please refer to the [original repository](https://github.com/michaelkubina/SpotMicroESP32) and check out the documentation in this fork for specific PCB and code setup details.
 
-## PCB Costs
-The following Section will describe in detail the different parts needed for your own PCB SpotMicroESP32 build, with at least some rough estimate of the price.
-
