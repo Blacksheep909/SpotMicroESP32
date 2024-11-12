@@ -1,7 +1,5 @@
 ﻿# Inverse Kinematics #
-
-**Still currently needs shoulder servos incorporated**
-
+-Updated, but not quite finished.
 ## The legs ##
 
 The length-measurements of the legs is performed on the centers of the rotational axis and from the perspective of the foottip touching the ground in its center.
