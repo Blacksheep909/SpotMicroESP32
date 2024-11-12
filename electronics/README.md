@@ -35,6 +35,8 @@ The design also anticipates future additions, like an **ESP32-CAM** module, but 
 6. **OLED Display and Relay Module**:
    - **OLED Display**: Plug in the OLED to display data like battery voltage, current action state, and other information.
    - **Relay Module (KY-019)**: The relay module slot is ready to handle higher power components safely.
+   
+### Mounting Component Photos
 
 ### Future Expansion
 
