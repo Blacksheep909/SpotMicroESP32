@@ -44,12 +44,15 @@ The PCB has additional pinouts, including one for an ESP32-CAM module, which can
 Here are images of the board and setup to help guide you through the assembly:
 
 1. **Robot Dog’s Internal Setup**:
+   ![SpotMicroESP32](https://github.com/michaelkubina/SpotMicroESP32/blob/master/spotmicroESP32.jpg)
    - This image shows the internal layout of the robot, with components neatly arranged on the PCB template. The wiring is organized to prevent interference and keep the system stable.
 
-2. **PCB Design (Front and Back)**:
+3. **PCB Design (Front and Back)**:
+   ![SpotMicroESP32](https://github.com/michaelkubina/SpotMicroESP32/blob/master/spotmicroESP32.jpg)
    - This shows the layout of the PCB with labeled areas for each component. Follow these labels to install each part correctly.
 
-3. **Wiring Schematic**:
+5. **Wiring Schematic**:
+   ![SpotMicroESP32](https://github.com/michaelkubina/SpotMicroESP32/blob/master/spotmicroESP32.jpg)
    - The schematic provides a complete wiring overview, detailing connections between the ESP32, sensors, motor drivers, and other peripherals.
 
 By following these instructions, you’ll be able to assemble a fully functional robot dog with modular components, thanks to the custom PCB template. This setup allows easy adjustments, upgrades, and troubleshooting while maintaining a clean and organized internal layout.
