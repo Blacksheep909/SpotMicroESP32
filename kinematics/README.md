@@ -38,12 +38,15 @@ In this current code iteration, we’ve set up inverse kinematics (IK) to calcul
      - `y_default = L1`: represents the y-coordinate when the upper leg is vertical.
 
    - A `rotationAngle` of -45 degrees is applied to align the y-axis with the top leg in its initial position. This rotation aligns the coordinate system to match the robot dog’s anatomy.
-   - In the future I will re-align the kinematic, so that the y-axis is vertical not horizontal.
+     
+   - **In the future I will re-align the kinematic, so that the y-axis is vertical not horizontal.**
 
 #### 3. **Coordinate Transformation**
    - Since the y-axis of this coordinate system is rotated by 90 degrees, the positive y-axis points **forward** in the direction of the dog’s movement.
    - To make calculations simpler, we adjust the `x` and `y` coordinates to set the paw’s default position as the origin (0,0).
-   **- (-5,10) is about zeroed out to servo paw default position when standing.**
+     
+   - **(-5,10) is about zeroed out to servo paw default position when standing.**
+   - 
    - Then, we rotate the coordinates by `rotationAngle` to match the orientation of the leg.
 
 #### 4. **Inverse Kinematics Calculations**
