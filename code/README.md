@@ -76,9 +76,10 @@ This directory contains the Arduino code for controlling the SpotMicroESP32 robo
 
 ![Flowchart](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/code/detailed_robot_dog_flowchart.png)
 
-Setting up a failsafe on the FS-i6X transmitter is essential to ensure that your robot dog safely stops or returns to a safe position if it loses signal from the transmitter. This process essentially "teaches" the transmitter what signal to send when a connection loss occurs, allowing you to set specific servo positions or actions to minimize risk.
 
 ### Steps to Set Up Failsafe on the FS-i6X
+
+A Failsafe on the FS-i6X transmitter is essential to ensure that your robot dog safely stops or returns to a safe position if it loses signal from the transmitter. This process essentially "teaches" the transmitter what signal to send when a connection loss occurs, allowing you to set specific servo positions or actions to minimize risk.
 
 1. **Access the Failsafe Settings:**
    Power on your FS-i6X transmitter and navigate to the "RX Setup" menu. From there, select the "Failsafe" option, which allows you to set failsafe values for each channel.
