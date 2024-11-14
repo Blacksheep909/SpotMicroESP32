@@ -56,6 +56,9 @@ This directory contains the Arduino code for controlling the SpotMicroESP32 robo
 
 2. **Upload to ESP32**:
 ### **VERY IMPORTANT:** When installing ESP32 board manager by Espressif Systems, make sure to have an edition NO LATER than **2.0.17**, as versions any later than that will cause issues with IBUS-BM, causing the code to not upload or function!
+
+There may be another fix for this, or the IBUS-BM library may be updated to be compatible, but for now this is the *only* fix I have found.
+
    - Ensure all libraries are installed and configured in the Arduino IDE.
    - Connect the ESP32 to your computer and upload the code.
 
