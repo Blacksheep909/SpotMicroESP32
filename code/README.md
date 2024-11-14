@@ -63,7 +63,8 @@ There may be another fix for this, or the IBUS-BM library may be updated to be c
    - Ensure all libraries are installed and configured in the Arduino IDE.
    - Connect the ESP32 to your computer and upload the code.
 
-4. **Calibrate and Test**:
+4. **Bind, Calibrate and Test**:
+   - Follow [this video tutorial](https://www.youtube.com/watch?v=v5SXRkQMgkA) on how to bind the reciever and the transmitter (FS-i6X and FS-i6B).
    - With the FS-i6 powered on, test each movement mode and adjust parameters in the code as needed for optimal performance.
 
 ### Usage
