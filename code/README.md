@@ -93,7 +93,7 @@ A Failsafe on the FS-i6X transmitter is essential to ensure that your robot dog 
 For a more detailed, step-by-step visual example, you can refer to [this video tutorial](https://www.youtube.com/watch?v=4N_hHfpEoHY).
 
 *Photo here shows what it should look similar to.*
-
+![Transmitter](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/code/20241114_190217.jpg)
 # Future development
 - The gait and inverse kinematics are currently still in the early-ish side of development. They work, but can always be better of course.
 - I would like to add a tilt mode feature where the user can look around with the dog using a joystick.
