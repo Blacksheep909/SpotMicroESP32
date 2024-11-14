@@ -37,6 +37,7 @@ The design also anticipates future additions, like an **ESP32-CAM** module, but 
 
    - Here is a photo of where to connect the 3-pin connector to the FS-i6B. We want to use the 'IBUS SERVO' pins on the reciever, which are outlined in green on the photo.
 6. The **KY-006 Buzzer** can be attached to output pins on the PCB. I reccommend placing the Buzzer somewhere in the dog where it is still inside the shell, and won't interfere with other parts. You can also solder it directly to the board.
+
 7. **OLED Display and Relay Module**:
    - **OLED Display**: Plug in the OLED to display data like battery voltage, current action state, and other information.
    - **Relay Module (KY-019)**: The relay module slot is ready to handle higher power components safely.
