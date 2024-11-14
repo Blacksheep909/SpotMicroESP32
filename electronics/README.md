@@ -44,7 +44,7 @@ The design also anticipates future additions, like an **ESP32-CAM** module, but 
 *The board in this photo was the first prototype, so a couple of traces are missing here, but are now updated in the newest version!*
 ### Future Expansion
 
-The PCB has additional pinouts, including one for an ESP32-CAM module, which can be used for streaming video or advanced vision processing. This slot is not yet populated, but the design allows for easy addition in the future, with straightforward integration into the control system.
+The PCB in the future could have additional pinouts including one for an ESP32-CAM module, which can be used for video or facial recognition. This slot is NOT yet populated, but the design allows for easy addition in the future, with straightforward integration into the PCB.
 
 ### Example Images
 
