@@ -103,5 +103,3 @@ To further improve the robot’s movement:
 1. Implement inverse kinematics for the shoulder joints.
 2. Adjust and refine gait patterns for smoother and more natural movements.
 3. Tune the joystick deadzones and movement thresholds for responsive control.
-
-This approach should give you precise control over the paw positions based on your joystick inputs and IK calculations. Let me know if you have any questions about further adjustments or adding new features!
