@@ -18,21 +18,24 @@ The design also anticipates future additions, like an **ESP32-CAM** module, but 
 
 ### Installation Instructions
 
-- There are multiple ways of approaching the PCBs components, one is two use female pin headers, which lets you easily attach/detach components. The other method is not using female pins, and directly soldering the components to the board.
+- There are multiple ways of approaching the PCBs components, one is two use female pin headers, which lets you easily attach/detach components. The other method is not using female pins, and directly soldering the components to the board. This method is what I reccomend, as it is more reliable, and lets you cut wires for components such as the screen, at your desired length.
 
 1. **Soldering Female Pin Headers**: Begin by soldering female pin headers to the PCB. There are two way sThis setup enables you to plug in each component rather than soldering them directly, making it easier to swap out or troubleshoot components.
 
 2. **Mounting the ESP32**: Insert the ESP32 Dev Kit into the designated header pins on the PCB. This board will serve as the main control unit, connecting to other components through the pin headers.
 
-3. **Connecting the PCA9685 Servo Driver**: Insert the PCA9685 module into the specific header on the PCB. This module controls the servos, allowing precise movement of the robot's legs.
+3. **Connecting the PCA9685 Servo Driver**: Insert the PCA9685 module into the specific header on the PCB. This module controls the servos, allowing movement of the robot's legs.
 
 4. **Adding Sensors**:
    - **Voltage and Current Sensors**: These sensors plug into their designated slots and help monitor power usage, which is especially useful for managing battery life.
    - **Ultrasonic Sensors**: These can be added in the front of the robot to help detect obstacles and avoid collisions.
 
-5. **Connecting the RC Receiver (FS-i6B)**: The iBus receiver plugs into the board and allows remote control of the robot through the FS-i6B transmitter. This receiver supports multiple channels, giving you control over various functions of the robot dog.
+5. **Connecting the RC Receiver (FS-i6B)**: The iBus receiver plugs into the board and allows remote control of the robot through the FS-i6B transmitter.This receiver supports multiple channels, giving you control over various functions of the robot dog.
+   
+![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/pcbassemble.jpg)
 
-6. **OLED Display and Relay Module**:
+   - Here is a photo of where to connect the 3-pin connector to the FS-i6B. We want to use the 'IBUS SERVO' pins on the reciever, which are outlined in the photo.
+7. **OLED Display and Relay Module**:
    - **OLED Display**: Plug in the OLED to display data like battery voltage, current action state, and other information.
    - **Relay Module (KY-019)**: The relay module slot is ready to handle higher power components safely.
    
