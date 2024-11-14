@@ -95,6 +95,30 @@ For a more detailed, step-by-step visual example, you can refer to [this video t
 *Photo here shows what it should look similar to.*
 ![Transmitter](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/code/20241114_190217(1).jpg)
 
+### Steps to Set Up Output MODE on the FS-i6X
+To ensure your FS-i6X transmitter is set to output in "PWM" and "I-BUS" mode, follow these steps:
+
+1. **Access the Output Mode Menu:**
+   - Power on the FS-i6X transmitter.
+   - Press and hold the "OK" button to enter the main menu.
+   - Use the directional buttons (up & down) to scroll to "System Setup," and press "OK" to select it.
+
+2. **Select Output Mode:**
+   - In the "System Setup" menu, go to 'RX Setup' press 'OK'. Next scroll down to find the "Output Mode" option (it's down a page), then press "OK" to open it.
+   - You should see options for various output modes, including "PWM" and "I-BUS."
+
+3. **Set to PWM and I-BUS:**
+   - Highlight "PWM" to enable standard servo signal output for each channel.
+   - Then select "I-BUS" if you need the transmitter to communicate with compatible receivers using FlySky's I-BUS protocol, often used for sensor data or expanded channel output.
+   - Confirm your selections by pressing "OK."
+
+4. **Save and Exit:**
+   - Once both "PWM" and "I-BUS" are selected, HOLD the "CANCEL" button to exit back to the main screen.
+   - The settings should now be saved, and your transmitter will operate in PWM and I-BUS modes. (settings will only be saved if cancel button is HELD)
+
+Following these steps will configure your FS-i6X transmitter to ensure compatibility with devices using PWM and I-BUS outputs.
+
+*Picture below of what the settings menu should look like when in the correct output mode*
 
 # Future development
 - The gait and inverse kinematics are currently still in the early-ish side of development. They work, but can always be better of course.
