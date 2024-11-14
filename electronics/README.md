@@ -66,7 +66,8 @@ Here are images of the board and setup to help guide you through the assembly:
 5. **Wiring Schematic**:
    ![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/image.png)
    - The schematic provides a complete wiring overview, detailing connections between the ESP32, sensors, motor drivers, and other peripherals.
-
+   - Some parts are missing from this original schematic, but are included on the PCB design downloadable above. Parts that are missing from this schematic include: KY-006 (buzzer) and FS-I6B (reciever)
+     
    ## This schematic is updated from the original schematic as two of the I2C were moved to accomodate the ESP32 DevKitC V4. 
 
 
