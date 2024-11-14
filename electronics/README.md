@@ -30,9 +30,9 @@ The design also anticipates future additions, like an **ESP32-CAM** module, but 
    - **Voltage and Current Sensors**: These sensors plug into their designated slots and help monitor power usage, which is especially useful for managing battery life.
    - **Ultrasonic Sensors**: These can be added in the front of the robot to help detect obstacles and avoid collisions.
 
-5. **Connecting the RC Receiver (FS-i6B)**: The iBus receiver plugs into the board and allows remote control of the robot through the FS-i6B transmitter.This receiver supports multiple channels, giving you control over various functions of the robot dog.
+5. **Connecting the RC Receiver (FS-i6B)**: The iBus receiver plugs into the board and allows remote control of the robot through the FS-i6B transmitter. This receiver supports multiple channels, giving you control over various functions of the robot dog.
    
-![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/pcbassemble.jpg)
+![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/1100x1100.jpg)
 
    - Here is a photo of where to connect the 3-pin connector to the FS-i6B. We want to use the 'IBUS SERVO' pins on the reciever, which are outlined in the photo.
 7. **OLED Display and Relay Module**:
