@@ -76,6 +76,23 @@ This directory contains the Arduino code for controlling the SpotMicroESP32 robo
 
 ![Flowchart](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/code/detailed_robot_dog_flowchart.png)
 
+Setting up a failsafe on the FS-i6X transmitter is essential to ensure that your robot dog safely stops or returns to a safe position if it loses signal from the transmitter. This process essentially "teaches" the transmitter what signal to send when a connection loss occurs, allowing you to set specific servo positions or actions to minimize risk.
+
+### Steps to Set Up Failsafe on the FS-i6X
+
+1. **Access the Failsafe Settings:**
+   Power on your FS-i6X transmitter and navigate to the "RX Setup" menu. From there, select the "Failsafe" option, which allows you to set failsafe values for each channel.
+
+2. **Set Desired Positions:**
+   For each channel, adjust the controls to position the servos or outputs in the desired failsafe position (e.g., legs in a stable position, motors off). Once the controls are in the preferred positions, select "Set" to lock in these values as the failsafe.
+
+3. **Confirm Failsafe Activation:**
+   After setting, you can test the failsafe by powering off the transmitter to simulate signal loss. The servos should move to the predefined failsafe positions.
+
+For a more detailed, step-by-step visual example, you can refer to [this video tutorial](https://www.youtube.com/watch?v=4N_hHfpEoHY).
+
+*Photo here shows what it should look similar to.*
+
 # Future development
 - The gait and inverse kinematics are currently still in the early-ish side of development. They work, but can always be better of course.
 - I would like to add a tilt mode feature where the user can look around with the dog using a joystick.
