@@ -51,15 +51,15 @@ This directory contains the Arduino code for controlling the SpotMicroESP32 robo
 
 1. **Configure Arduino Code**:
    - Open `INDEX_sketch_(DATE-CODENAME).ino` to customize settings for the robot’s movement, including:
-     - **Deadzone thresholds** for FB and LR movements.
-     - **Gait cycle timing** parameters.
-     - **Failsafe settings** for signal loss protection.
+     - **Failsafe settings** for signal loss protection (this is only if you intend to change the current setup)
+     - **LIPO BATTERY Cell Count (Very important)
 
 2. **Upload to ESP32**:
-   - Connect the ESP32 to your computer and upload the code.
+   - **VERY IMPORTANT:** When installing ESP32 board manager by Espressif Systems, make sure to have an edition NO LATER than **2.0.17**, as versions any later than that will cause issues with IBUS-BM, causing the code to not upload or function!
    - Ensure all libraries are installed and configured in the Arduino IDE.
+   - Connect the ESP32 to your computer and upload the code.
 
-3. **Calibrate and Test**:
+4. **Calibrate and Test**:
    - With the FS-i6 powered on, test each movement mode and adjust parameters in the code as needed for optimal performance.
 
 ### Usage
