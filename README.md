@@ -46,15 +46,15 @@ This repository is currently just my hobby and as such, it will have its own pac
 
 ## Repo/Code Usage Aims
 - Basic Walking and Navigation: Use the FS-i6X joystick to control SpotMicro’s direction. Push forward to walk, pull back to reverse, and move the stick left or right to turn.
-- Tilt Mode: This mode enables the robot to rotate its head and upper body, controlled by the joystick to look at objects from different angles.
+- Tilt Mode: This mode enables the robot to rotate its upper body, controlled by the joystick to look at objects from different angles.
 - Failsafe Activation: If the FS-i6X loses signal, SpotMicro automatically stops, ensuring safety during operation.
 
 Additional Resources
 
-For more information on hardware assembly, code structure, and future updates, please refer to the [original repository](https://github.com/michaelkubina/SpotMicroESP32) and check out the documentation in this fork for specific PCB and code setup details.
+For more information on hardware assembly and some electronics please refer to the [original repository](https://github.com/michaelkubina/SpotMicroESP32) and check out the documentation in this fork for specific PCB and code setup details.
 
 ## Contributing
 
-- For contributions or to report issues, please contact us or open an issue in this fork’s repository.
+- For contributions or to report issues, please contact me or open an issue in this fork’s repository.
 
 ### My Discord is blacksheep909 if you would like to contact me
