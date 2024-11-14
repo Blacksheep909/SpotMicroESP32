@@ -24,7 +24,7 @@ The design also anticipates future additions, like an **ESP32-CAM** module, but 
 
 2. **Mounting the ESP32**: Insert the ESP32 Dev Kit into the designated header pins on the PCB. This board will serve as the main control unit, connecting to other components through the pin headers.
 
-3. **Connecting the PCA9685 Servo Driver**: Insert the PCA9685 module into the specific header on the PCB. This module controls the servos, allowing movement of the robot's legs.
+3. **Connecting the PCA9685 Servo Driver**: Insert the PCA9685 module into the specific header on the PCB. This module controls the servos, allowing movement of the robot's legs. The PCA9685 has a power output on the board -you will need to solder wires from this output, either into the terminal, or by breaking off the terminal carefully and attaching them straight to the board's pads.
 
 4. **Adding Sensors**:
    - **Voltage and Current Sensors**: These sensors plug into their designated slots and help monitor power usage, which is especially useful for managing battery life.
