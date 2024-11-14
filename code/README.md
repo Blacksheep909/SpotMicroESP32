@@ -119,6 +119,8 @@ To ensure your FS-i6X transmitter is set to output in "PWM" and "I-BUS" mode, fo
 Following these steps will configure your FS-i6X transmitter to ensure compatibility with devices using PWM and I-BUS outputs.
 
 *Picture below of what the settings menu should look like when in the correct output mode*
+![OUTPUT](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/code/20241114_211004(1).jpg)
+
 
 # Future development
 - The gait and inverse kinematics are currently still in the early-ish side of development. They work, but can always be better of course.
