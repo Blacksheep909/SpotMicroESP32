@@ -34,7 +34,7 @@ The design also anticipates future additions, like an **ESP32-CAM** module, but 
    
 ![SpotMicroESP32](https://github.com/Blacksheep909/SpotMicroESP32/blob/master/electronics/Images/1100x1100.jpg)
 
-   - Here is a photo of where to connect the 3-pin connector to the FS-i6B. We want to use the 'IBUS SERVO' pins on the reciever, which are outlined in the photo.
+   - Here is a photo of where to connect the 3-pin connector to the FS-i6B. We want to use the 'IBUS SERVO' pins on the reciever, which are outlined in green on the photo.
 7. **OLED Display and Relay Module**:
    - **OLED Display**: Plug in the OLED to display data like battery voltage, current action state, and other information.
    - **Relay Module (KY-019)**: The relay module slot is ready to handle higher power components safely.
